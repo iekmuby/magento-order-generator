@@ -54,8 +54,6 @@ class Sha_Shell_Order_Generator extends Mage_Shell_Abstract
 			return;
 		}
 
-		$websiteId = $this->stores[$storeId];
-
 		// Start New Sales Order Quote
 		$quote = Mage::getModel('sales/quote')->setStoreId($storeId);
 
