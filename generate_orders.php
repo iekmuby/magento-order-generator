@@ -77,7 +77,7 @@ class Sha_Shell_Order_Generator extends Mage_Shell_Abstract
 		// Set Sales Order Shipping Address
 		$shippingAddress = $quote->getShippingAddress()->addData($customer->getPrimaryShippingAddress());
 		
-		// Collect Rates and Set Shipping & Payment Method to free shipping and chash on delivery
+		// Collect Rates and Set Shipping & Payment Method to free shipping and cash on delivery
 		$shippingAddress->setCollectShippingRates(true)
 				->collectShippingRates()
 				->setShippingMethod('freeshipping_freeshipping')
